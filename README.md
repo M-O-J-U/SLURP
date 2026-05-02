@@ -149,6 +149,8 @@ If you use this code or data in your research, please cite:
 }
 ```
 
+Access the citation at https://doi.org/10.5281/zenodo.19982081
+
 ---
 
 ## Dataset
