@@ -8,14 +8,14 @@ This repository contains the code, data, and results for the paper:
 
 ## What This Research Is About
 
-Voice-based systems convert speech to text using ASR (Automatic Speech Recognition), then classify the intent of that text. ASR systems are not perfect — they make transcription errors, and those errors hurt classification accuracy downstream. This paper asks a simple but unanswered question: which type of model handles those errors best?
+Voice-based systems convert speech to text using ASR (Automatic Speech Recognition), then classify the intent of that text. ASR systems are not perfect - they make transcription errors, and those errors hurt classification accuracy downstream. This paper asks a simple but unanswered question: which type of model handles those errors best?
 
-We tested four model types — TF-IDF + SVM, TF-IDF + Logistic Regression, BERT, and a fine-tuned large language model (Qwen2.5-3B with QLoRA) — on the SLURP spoken language benchmark (66 intent classes). We injected controlled noise at 6 word error rate levels (0%, 10%, 20%, 30%, 40%, 50%) and measured how each model degraded.
+We tested four model types - TF-IDF + SVM, TF-IDF + Logistic Regression, BERT, and a fine-tuned large language model (Qwen2.5-3B with QLoRA) - on the SLURP spoken language benchmark (66 intent classes). We injected controlled noise at 6 word error rate levels (0%, 10%, 20%, 30%, 40%, 50%) and measured how each model degraded.
 
 **Main findings:**
 - The fine-tuned LLM maintained higher accuracy at every noise level above zero
 - BERT degraded the most steeply, dropping 28.2 Macro F1 points from clean to WER=50%
-- The LLM dropped only 20.8 points — a 7.4 point advantage at maximum noise
+- The LLM dropped only 20.8 points - a 7.4 point advantage at maximum noise
 - TF-IDF models showed an unexpected two-phase degradation pattern: a sharp initial drop at WER=10% followed by relative stability up to WER=30%
 - This is the first published LLM classification benchmark on the SLURP dataset
 
