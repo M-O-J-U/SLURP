@@ -140,10 +140,10 @@ Metric: Macro F1. Dataset: SLURP test set (13,006 utterances, 66 intent classes)
 If you use this code or data in your research, please cite:
 
 ```
-@article{yourname2026asr,
+@article{AbdulMoizMuhammad2026asr,
   title={How Robust Are Intent Classifiers to ASR Noise? A Systematic Comparison
          of Traditional Models, BERT, and Large Language Models},
-  author={Your Full Name and Friend Full Name},
+  author={Abdul Moiz Muhammad and Abdul Wasae},
   journal={arXiv preprint},
   year={2026}
 }
